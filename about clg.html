@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="clg.css">
+    <!-- font awesome cdb bootstrap -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- section tag is used when we want to divide webpage in different differet sections which come on scrolling down -->
+    <section class="header">
+
+            <!-- <img class="banner" src="banner.png" alt="bckgrnd"> -->
+            <nav>
+               <img src="logo.png" alt="logo">
+                <div class="nav-links" id="navlinks">
+                    <!-- font awesome 4 icons -->
+                    
+                    <ul>
+                        <i class="fa fa-times" onclick="hideMenu()" ></i>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">COURSE</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars"  onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+             <h1>About Us</h1>
+            </div>
+    </section>
+    <section class="explore">
+            <div class="ex-row">
+                <div class="ex-col">
+
+                    <h1>We are worlds largest University</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate error hic optio odit temporibus praesentium molestiae asperiores iusto corrupti delectus dolor ad modi, non vel. Quae quaerat animi numquam, vero repellat aliquid?</p>
+                </div>
+                <div class="ex-col">
+
+                    <img src="certificate.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="About">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores qui fuga tenetur.</p>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+        
+    </section>
+   <script>
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+        navlinks.style.right = "0px";
+    }
+    function hideMenu(){
+        navlinks.style.right= "-200px";
+    }
+   </script>
+</body>
+</html>
